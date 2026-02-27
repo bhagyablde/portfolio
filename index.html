@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: green;
+}
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+
+    h1 {
+        color: darkblue;
+    }
+
+    h2 {
+        color: darkgreen;
+    }
+
+    ul {
+        list-style-position: inside;
+        padding: 0;
+        display: inline-block;
+        text-align: left;
+    }
+    .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+}
+.container {
+    width: 60%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+</style>
+</head>
+<body>
+   <script>
+    function showMessage() {
+        document.getElementById("contactMessage").innerHTML =
+        "You can contact me at: bhagyagolasangi073@gmail.com";
+        document.getElementById("contactBtn").innerHTML = "Email Sent ✅";
+        document.getElementById("contactBtn").disabled = true;
+    }
+</script>
+    <h1>Hello, I am Bhagya 👋</h1>
+    <p>I am learning Web Development.</p>
+
+    <h2>About Me</h2>
+    <p>I am a 7th semester Computer Science student. I am interested in Web Development.</p>
+
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+    </ul>
+    <h2>My Projects</h2>
+
+<ul>
+<li>
+IoT-Based Smart Helmet for Road Accident Detection
+<a href="https://github.com/bhagyablde/smart-helmet-project" target="_blank">View Project</a>
+</li>
+
+<li>
+Student Management System
+<a href="https://github.com/bhagyablde/Student-Management-System" target="_blank">View Project</a>
+</li>
+
+<li>
+Online Quiz Application
+<a href="https://github.com/bhagyablde/Online-Quiz-App" target="_blank">View Project</a>
+</li>
+</ul>
+    <div><button id="contactBtn" onclick="showMessage()">Contact Me</button></div>
+    <p id="contactMessage"></p>
+    <img src="bbu.jpg" alt="Bhagya" class="profile-img">
+
+</body>
+</html>
