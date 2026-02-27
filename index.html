@@ -3,6 +3,21 @@
 <head>
     <title>My Portfolio</title>
     <style>
+        nav {
+    background-color: darkblue;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
         button {
     background-color: darkblue;
     color: white;
@@ -16,7 +31,13 @@
 button:hover {
     background-color: green;
 }
-    body {
+    body 
+    <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav> {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
         text-align: center;
@@ -60,6 +81,7 @@ button:hover {
 </style>
 </head>
 <body>
+    
    <script>
     function showMessage() {
         document.getElementById("contactMessage").innerHTML =
@@ -74,10 +96,10 @@ button:hover {
 <button>Download My Resume</button>
 </a>
 
-    <h2>About Me</h2>
+    <<h2 id="about">About Me</h2>
     <p>I am a 7th semester Computer Science student. I am interested in Web Development.</p>
 
-    <h2>My Skills</h2>
+    <h2 id="skills">My Skills</h2>
     <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -86,7 +108,7 @@ button:hover {
         <li>C</li>
         <li>C++</li>
     </ul>
-    <h2>My Projects</h2>
+   <h2 id="projects">My Projects</h2>
 
 <ul>
 <li>
@@ -104,6 +126,7 @@ Online Quiz Application
 <a href="https://github.com/bhagyablde/Online-Quiz-App" target="_blank">View Project</a>
 </li>
 </ul>
+<h2 id="contact">Contact</h2>
     <div><button id="contactBtn" onclick="showMessage()">Contact Me</button></div>
     <p id="contactMessage"></p>
     <img src="bbu.jpg" alt="Bhagya" class="profile-img">
